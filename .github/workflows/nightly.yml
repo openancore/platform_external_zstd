@@ -24,7 +24,7 @@ jobs:
         key: regression-cache-{{ checksum "tests/regression/data.c" }}-v0
         path: tests/regression/cache
         restore-keys: regression-cache-{{ checksum "tests/regression/data.c" }}-v0
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         path: "/tmp/circleci-artifacts"
     - name: Install Dependencies
